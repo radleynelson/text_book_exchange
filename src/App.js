@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import Home from './Home.js';
+import NavBar from './NavBar.js';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">TextBookResale.com</h1>
-        </header>
-        <p className="App-intro">
-            <input class="mainSearchBox" placeholder="Search for a textbook"></input>
-        </p>
+        <MuiThemeProvider>
+          <NavBar/>
+          <Home/>
+        </MuiThemeProvider>
       </div>
     );
   }
