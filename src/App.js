@@ -5,6 +5,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Home from './Home.js';
 import NavBar from './NavBar.js';
 
+
 class App extends Component {
   render() {
     return (
