@@ -12,7 +12,7 @@ class App extends Component {
       <div className="App">
         <MuiThemeProvider>
           <NavBar/>
-          <Home/>
+          <Home />
         </MuiThemeProvider>
       </div>
     );
