@@ -7,10 +7,10 @@ class Home extends React.Component {
 
   render(){
     return(
-      <section style={{display: 'grid'}}>
-        <div style={{backgroundColor: 'black', width: '400px', height: '400px'}}>
+      <section style={{padding: '50px',display: 'grid', gridTemplate: 'auto auto/ auto auto'}}>
+        <div style={{backgroundColor: 'black', width: '400px', height: '400px', margin: 'auto'}}>
         </div>
-        <div style={{backgroundColor: 'black', width: '400px', height: '400px'}}>
+        <div style={{backgroundColor: 'black', width: '400px', height: '400px', margin: 'auto'}}>
         </div>
       </section>
   );
