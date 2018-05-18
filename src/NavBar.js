@@ -7,7 +7,6 @@ import MaterialIcon, {colorPallet} from 'material-icons-react';
 import TextField from 'material-ui/TextField';
 
 
-
 class NavBar extends React.Component{
   constructor(props){
     super(props);

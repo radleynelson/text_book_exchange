@@ -4,7 +4,7 @@ import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Home from './Home.js';
 import NavBar from './NavBar.js';
-
+import Toggle from './Toggle.js';
 
 class App extends Component {
   render() {
@@ -13,6 +13,7 @@ class App extends Component {
         <MuiThemeProvider>
           <NavBar/>
           <Home />
+          <Toggle />
         </MuiThemeProvider>
       </div>
     );
