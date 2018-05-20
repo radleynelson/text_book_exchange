@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import RaisedButton from 'material-ui/RaisedButton';
 import {GridList, GridTile} from 'material-ui/GridList';
 import Columns from 'react-bulma-components/lib/components/columns';
@@ -34,8 +35,8 @@ class Home extends React.Component {
         <Columns>
             <Columns.Column>
                 <section style={Styles.root}>
-                    <button style={Styles.button}><span style={Styles.Text}>BUY</span></button>
-                    <button style={Styles.button}><span style={Styles.Text}>SELL</span></button>
+                   <button style={Styles.button}><span style={Styles.Text}>BUY</span></button>
+                    <Link to='/create'><button style={Styles.button}><span style={Styles.Text}>SELL</span></button></Link>
                 </section>
             </Columns.Column>
         
