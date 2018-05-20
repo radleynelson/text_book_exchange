@@ -6,6 +6,7 @@ import Home from './Home.js';
 import NavBar from './NavBar.js';
 import Toggle from './Toggle.js';
 
+
 class App extends Component {
   render() {
     return (
@@ -18,6 +19,6 @@ class App extends Component {
       </div>
     );
   }
-}
+};
 
 export default App;
