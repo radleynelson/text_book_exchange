@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import RaisedButton from 'material-ui/RaisedButton';
 import {GridList, GridTile} from 'material-ui/GridList';
 import Columns from 'react-bulma-components/lib/components/columns';
+import Toggle from './Toggle';
 
 
 const Styles = {
@@ -37,6 +38,7 @@ class Home extends React.Component {
                 <section style={Styles.root}>
                    <button style={Styles.button}><span style={Styles.Text}>BUY</span></button>
                     <Link to='/create'><button style={Styles.button}><span style={Styles.Text}>SELL</span></button></Link>
+                    <Toggle /> 
                 </section>
             </Columns.Column>
         
