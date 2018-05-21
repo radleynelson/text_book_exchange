@@ -4,7 +4,11 @@ import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Home from './Home.js';
 import NavBar from './NavBar.js';
+<<<<<<< HEAD
 import Toggle from './Toggle.js';
+=======
+import Footer from './Footer.js';
+>>>>>>> BakowBranch
 
 
 class App extends Component {
@@ -15,6 +19,7 @@ class App extends Component {
           <NavBar/>
           <Home />
           <Toggle />
+          <Footer/>
         </MuiThemeProvider>
       </div>
     );
