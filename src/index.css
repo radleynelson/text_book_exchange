@@ -3,3 +3,9 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.AppContainer {
+    margin: auto;
+    width: 85%;
+    margin-top: 3em;
+}
