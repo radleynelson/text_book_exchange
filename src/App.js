@@ -8,6 +8,8 @@ import NavBar from './NavBar.js';
 import Toggle from './Toggle.js';
 import Footer from './Footer.js';
 import CreateListing from './CreateListing.js';
+import Listings from './components/Listings.js';
+import ListingDetails from './components/ListingDetails.js';
 
 const NotFoundPage = () => (
     <div>
@@ -26,6 +28,8 @@ class App extends Component {
         <Switch>
           <Route path="/" component={Home} exact={true} />
           <Route path="/create" component={CreateListing} />
+          <Route path="/listings" component={Listings} />
+          <Route path="/listing/:id" component={ListingDetails} exact={true} />
           <Route component={NotFoundPage} />
         </Switch>
         </div>

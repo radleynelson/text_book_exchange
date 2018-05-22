@@ -1,0 +1,14 @@
+.Product-Details{
+  margin: auto;
+  text-align: center;
+}
+
+.description{
+  width: 75%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.price{
+  font-size: 2rem;
+}

@@ -15,8 +15,8 @@ const Styles = {
         backgroundColor: 'rgb(0, 188, 212)',
         borderRadius: '1em',
         outline: 'none',
-        
-        
+
+
     },
     root: {
         display: 'grid',
@@ -30,20 +30,20 @@ const Styles = {
 };
 
 class Home extends React.Component {
-    
+
   render(){
     return(
         <Columns>
             <Columns.Column>
                 <section style={Styles.root}>
-                   <button style={Styles.button}><span style={Styles.Text}>BUY</span></button>
+                   <Link to='/listings'><button style={Styles.button}><span style={Styles.Text}>BUY</span></button></Link>
                     <Link to='/create'><button style={Styles.button}><span style={Styles.Text}>SELL</span></button></Link>
-                    <Toggle /> 
+                    <Toggle />
                 </section>
             </Columns.Column>
-        
+
         </Columns>
-        
+
   );
   }
 }
