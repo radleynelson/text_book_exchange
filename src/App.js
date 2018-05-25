@@ -10,10 +10,17 @@ import Footer from './Footer.js';
 import CreateListing from './CreateListing.js';
 import Listings from './components/Listings.js';
 import ListingDetails from './components/ListingDetails.js';
+import PreviewListing from './components/PreviewListing.js'
+import { Field, Label, Control, Input } from 'react-bulma-components/full';
+import RaisedButton from 'material-ui/RaisedButton';
 
 const NotFoundPage = () => (
     <div>
-        404 - <Link to="/">Go to Home</Link>
+        <h1>404</h1>
+        <h3>Page not found</h3>
+        <hr></hr>
+        <br></br>
+        <Link to="/"><RaisedButton label="Go to Home" primary={true} /></Link>
     </div>
 );
 
@@ -26,11 +33,12 @@ class App extends Component {
         <BrowserRouter>
         <div className="AppContainer">
         <Switch>
-          <Route path="/" component={Home} exact={true} />
-          <Route path="/create" component={CreateListing} />
-          <Route path="/listings" component={Listings} />
-          <Route path="/listing/:id" component={ListingDetails} exact={true} />
-          <Route component={NotFoundPage} />
+            <Route path="/" component={Home} exact={true} />
+            <Route path="/createListing" component={CreateListing} />
+            <Route path="/listings" component={Listings} />
+            <Route path="/listing/:id" component={ListingDetails} exact={true} />
+            <Route path="/previewListing/:id" component={PreviewListing} />
+            <Route component={NotFoundPage} />
         </Switch>
         </div>
         </BrowserRouter>

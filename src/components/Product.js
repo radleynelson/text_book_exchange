@@ -12,7 +12,7 @@ class Product extends React.Component {
     return (
       <div>
         <Card>
-          <Card.Image size="4by3" src={this.props.Image} />
+          <Card.Image size='4by3' src={this.props.Image} />
           <Card.Content>
             <Media>
             <Media.Item>

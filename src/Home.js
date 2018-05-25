@@ -37,7 +37,7 @@ class Home extends React.Component {
             <Columns.Column>
                 <section style={Styles.root}>
                    <Link to='/listings'><button style={Styles.button}><span style={Styles.Text}>BUY</span></button></Link>
-                    <Link to='/create'><button style={Styles.button}><span style={Styles.Text}>SELL</span></button></Link>
+                    <Link to='/createListing'><button style={Styles.button}><span style={Styles.Text}>SELL</span></button></Link>
                     <Toggle />
                 </section>
             </Columns.Column>
