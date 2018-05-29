@@ -5,7 +5,7 @@ import { Control } from 'react-bulma-components/full';
 import { Link } from 'react-router-dom';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
-import SelectFieldExampleMultiSelect from './components/ComboBox.js';
+import SelectFieldExampleMultiSelect from './ComboBox.js';
 
 
 //  list of textbooks

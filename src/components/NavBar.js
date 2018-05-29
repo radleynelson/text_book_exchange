@@ -22,6 +22,9 @@ class NavBar extends React.Component{
   handleClose(){
     this.setState(()=>({open: false}));
   }
+  handleAccountMenu() {
+      alert('Log in / Create Account / Log out / My Account');
+  }
 
   render(){
     return(
@@ -36,7 +39,7 @@ class NavBar extends React.Component{
             <TextField
             hintText="Search"
             />
-              <MaterialIcon icon="account_circle" size='medium' />
+              <MaterialIcon icon="account_circle" size='medium' onClick={this.handleAccountMenu} />
             </div>
           }
         />
@@ -48,12 +51,7 @@ class NavBar extends React.Component{
         >
           <b>
             <MenuItem
-            onClick={this.handleClose}
-            style = {{
-              fontSize: '20px',
-              textAlign: 'center',
-            }}
-            >
+            onClick={this.handleClose}>
             Home
             </MenuItem>
           </b>
@@ -61,8 +59,9 @@ class NavBar extends React.Component{
           <MenuItem onClick={this.handleClose}>Buy</MenuItem>
           <MenuItem onClick={this.handleClose}>Sell</MenuItem>
           <MenuItem onClick={this.handleClose}>Contact</MenuItem>
-          <MenuItem onClick={this.handleClose}>My Acount</MenuItem>
+          <MenuItem onClick={this.handleClose}>My Account</MenuItem>
           <MenuItem onClick={this.handleClose}>My Favorites</MenuItem>
+          <MenuItem onClick={this.handleClose}>How it Works</MenuItem>
         </Drawer>
       </div>
     );
