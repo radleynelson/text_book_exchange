@@ -13,6 +13,8 @@ import ListingDetails from './ListingDetails.js';
 import PreviewListing from './PreviewListing.js'
 import { Field, Label, Control, Input } from 'react-bulma-components/full';
 import RaisedButton from 'material-ui/RaisedButton';
+import MyAccount from './MyAccount.js';
+
 
 const NotFoundPage = () => (
     <div>
@@ -38,6 +40,7 @@ class App extends Component {
             <Route path="/listings" component={Listings} />
             <Route path="/listing/:id" component={ListingDetails} exact={true} />
             <Route path="/previewListing/:id" component={PreviewListing} />
+            <Route path="/myAccount" component={MyAccount} />
             <Route component={NotFoundPage} />
         </Switch>
         </div>
