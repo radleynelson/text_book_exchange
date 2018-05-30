@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter, Link } from 'react-router-dom';
 import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
@@ -50,14 +51,13 @@ class NavBar extends React.Component{
           onRequestChange={(open) => this.setState({open})}
         >
           <b>
-            <MenuItem
-            onClick={this.handleClose}>
+            <BrowserRouter><Link to='/' onClick={this.handleClose}><MenuItem>
             Home
-            </MenuItem>
+            </MenuItem></Link></BrowserRouter>
           </b>
           <Divider/>
-          <MenuItem onClick={this.handleClose}>Buy</MenuItem>
-          <MenuItem onClick={this.handleClose}>Sell</MenuItem>
+          <BrowserRouter><Link to='/listings' onClick={this.handleClose}><MenuItem >Buy</MenuItem></Link></BrowserRouter>
+          <BrowserRouter><Link to='/createListing' onClick={this.handleClose}><MenuItem >Sell</MenuItem></Link></BrowserRouter>
           <MenuItem onClick={this.handleClose}>Contact</MenuItem>
           <MenuItem onClick={this.handleClose}>My Account</MenuItem>
           <MenuItem onClick={this.handleClose}>My Favorites</MenuItem>
