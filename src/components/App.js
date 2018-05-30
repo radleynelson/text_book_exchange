@@ -10,9 +10,11 @@ import Footer from './Footer.js';
 import CreateListing from './CreateListing.js';
 import Listings from './Listings.js';
 import ListingDetails from './ListingDetails.js';
-import PreviewListing from './PreviewListing.js'
+import PreviewListing from './PreviewListing.js';
+import Cart from './Cart.js';
 import { Field, Label, Control, Input } from 'react-bulma-components/full';
 import RaisedButton from 'material-ui/RaisedButton';
+
 
 const NotFoundPage = () => (
     <div>
@@ -37,7 +39,8 @@ class App extends Component {
             <Route path="/createListing" component={CreateListing} />
             <Route path="/listings" component={Listings} />
             <Route path="/listing/:id" component={ListingDetails} exact={true} />
-            <Route path="/previewListing/:id" component={PreviewListing} />
+            <Route path="/previewListing/:id" component={PreviewListing} exact={true} />
+            <Route path="/cart/:id" component={Cart} exact={true} />
             <Route component={NotFoundPage} />
         </Switch>
         </div>
