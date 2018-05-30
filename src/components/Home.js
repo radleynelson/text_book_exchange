@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import RaisedButton from 'material-ui/RaisedButton';
 import {GridList, GridTile} from 'material-ui/GridList';
 import Columns from 'react-bulma-components/lib/components/columns';
+import LandingText from './LandingText';
 import Toggle from './Toggle';
 
 
@@ -40,6 +41,7 @@ class Home extends React.Component {
                     <Link to='/createListing'><button style={Styles.button}><span style={Styles.Text}>SELL</span></button></Link>
                     <Toggle />
                 </section>
+                <LandingText/>
             </Columns.Column>
 
         </Columns>
