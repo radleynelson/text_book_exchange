@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Heading, Hero, Container, Button, Columns, Section, Box, Level, Media } from 'react-bulma-components/full';
+import { Link } from 'react-router-dom';
 
 const Styles = {
     image: {
@@ -24,7 +25,7 @@ export default class CartProduct extends Component {
                     
                     <Columns>
                         <Columns.Column size={6}>
-                            <p>{this.props.Title}</p>
+                            <Link to={'/listing/'+this.props.Id}><p>{this.props.Title}</p></Link>
                             <p>{this.props.Author}</p>
                             <p>{this.props.ISBN}</p>
                             <br></br>
