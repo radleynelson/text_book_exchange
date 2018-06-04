@@ -3,12 +3,12 @@ import Columns from 'react-bulma-components/lib/components/columns';
 
 
 
-const styles = {
-    section: {
-        margin: 'auto'
-        
-    },
-}
+//const styles = {
+//    section: {
+//        margin: 'auto'
+//        
+//    },
+//}
 
 class Toggle extends React.Component {
     constructor(props) {

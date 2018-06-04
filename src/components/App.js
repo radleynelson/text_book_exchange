@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
 import '../App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Home from './Home.js';
 import NavBar from './NavBar.js';
-import Toggle from './Toggle.js';
 import Footer from './Footer.js';
 import CreateListing from './CreateListing.js';
 import Listings from './Listings.js';
 import ListingDetails from './ListingDetails.js';
 import PreviewListing from './PreviewListing.js';
 import Cart from './Cart.js';
-import { Field, Label, Control, Input } from 'react-bulma-components/full';
+import ReviewOrder from './ReviewOrder.js';
 import RaisedButton from 'material-ui/RaisedButton';
 import MyAccount from './MyAccount.js';
 
@@ -43,6 +41,7 @@ class App extends Component {
             <Route path="/listing/:id" component={ListingDetails} exact={true} />
             <Route path="/previewListing/:id" component={PreviewListing} exact={true} />
             <Route path="/cart/:id" component={Cart} exact={true} />
+            <Route path="/reviewOrder" component={ReviewOrder} />
             <Route path="/myAccount" component={MyAccount} />
             <Route component={NotFoundPage} />
         </Switch>

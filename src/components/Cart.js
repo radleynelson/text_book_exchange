@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import { Heading, Hero, Container, Button, Columns, Section, Box, Level } from 'react-bulma-components/full';
-import CartProduct from './CartProduct';
+import { Heading, Hero, Container, Button, Section, } from 'react-bulma-components/full';
+import CartProduct from './CartProduct.js';
+import { Link } from 'react-router-dom';
  
 
 
@@ -47,7 +48,7 @@ export default class Cart extends Component {
             <Section>
             <Container>
                 <div>
-                    <Button color="primary">Proceed to Checkout</Button>
+                    <Link to='/reviewOrder'><Button color="primary">Proceed to Checkout</Button></Link>
                 </div>
             </Container>
             </Section>

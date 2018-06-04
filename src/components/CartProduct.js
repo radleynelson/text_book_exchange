@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Heading, Hero, Container, Button, Columns, Section, Box, Level, Media } from 'react-bulma-components/full';
+import { Container, Columns, Section, Box, Media } from 'react-bulma-components/full';
 import { Link } from 'react-router-dom';
 
 const Styles = {

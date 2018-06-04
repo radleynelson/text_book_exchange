@@ -1,6 +1,5 @@
 import React from 'react';
 import { Jumbotron, Button } from 'react-bootstrap';
-import { Container, Section, Heading } from 'react-bulma-components';
 
  const JumboStyle = {
 	 Jumbo: {

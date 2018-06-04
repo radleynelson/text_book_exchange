@@ -1,7 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import RaisedButton from 'material-ui/RaisedButton';
-import {GridList, GridTile} from 'material-ui/GridList';
 import Columns from 'react-bulma-components/lib/components/columns';
 import LandingText from './LandingText';
 import Toggle from './Toggle';

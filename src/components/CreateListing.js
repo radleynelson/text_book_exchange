@@ -1,6 +1,5 @@
 import React from 'react';
 import CreateListingForm from './CreateListingForm';
-import { Field } from 'react-bulma-components/full';
 
     
 //  list of the user's textbooks for sale

@@ -1,7 +1,4 @@
 import React from 'react';
-import { Container } from 'react-bulma-components/full';
-import { Heading } from 'react-bulma-components/full';
-import { Section } from 'react-bulma-components/full';
 import Tasks from './Tasks.js';
 import AdminButton from './AdminButton.js';
 import UserSearch from './UserSearch.js'
