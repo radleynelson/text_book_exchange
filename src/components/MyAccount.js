@@ -42,10 +42,10 @@ class MyAccount extends React.Component{
             </section>
             <section className="info-tiles">
               <div className="tile is-ancestor has-text-centered extra-space">
+                <AdminButton message="My Balance" />
                 <AdminButton message="My Listings" />
                 <AdminButton message="My Favorites" />
                 <AdminButton message="Change Password" />
-                <AdminButton message="Test" />
               </div>
             </section>
             <div className="columns">
