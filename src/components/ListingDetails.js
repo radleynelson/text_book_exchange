@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/ListingDetails.css';
 import { Box } from 'react-bulma-components/full';
 import { Button } from 'react-bulma-components/full';
+import { Link } from 'react-router-dom';
 
 
 class ListingDetails extends React.Component {
@@ -30,9 +31,9 @@ class ListingDetails extends React.Component {
             <Box>
               <h1>{this.state.Listing.Title}</h1>
               <h3>by: {this.state.Listing.Author}</h3>
-              <img src={this.state.Listing.Image}/>
+              <img src={this.state.Listing.Image} alt="textbook"/>
               <p className='description price'>{this.state.Listing.Price}</p>
-              <Button onClick={this.handleAddToCart}>Add to Cart</Button>
+              <Link to={'/cart/'+this.state.Listing.Id}><Button>Add to Cart</Button></Link>
               <p className='description'>{this.state.Listing.FullDescription}</p>
             </Box>
           </div>

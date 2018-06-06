@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/ListingDetails.css';
 import { Box } from 'react-bulma-components/full';
-import { Button } from 'react-bulma-components/full';
 import Product from './Product.js';
 import RaisedButton from 'material-ui/RaisedButton';
 
