@@ -8,7 +8,6 @@ exports.up = function(knex, Promise) {
         table.string('email');
         table.string('hash');
         table.string('gender');
-        table.integer('school_id').unsigned().notNullable().references('id').inTable('School');
     }),
   ]);
 };
@@ -18,6 +17,3 @@ exports.down = function(knex, Promise) {
     knex.schema.dropTable('Users'),
   ]);
 };
-
-
-

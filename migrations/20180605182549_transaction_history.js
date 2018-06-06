@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
         table.integer('seller_id').unsigned().notNullable().references('id').inTable('Users');
         table.integer('buyer_id').unsigned().notNullable().references('id').inTable('Users');
         table.integer('product_id').unsigned().notNullable().references('id').inTable('Products');
-        
+
     }),
   ]);
 };

@@ -11,9 +11,6 @@ exports.up = function(knex, Promise) {
         table.boolean('status');
         table.string('course');
         table.string('price');
-        table.integer('condition_id').unsigned().notNullable().references('id').inTable('Condition');
-        table.integer('category_id').unsigned().notNullable().references('id').inTable('Category');
-        table.integer('school_id').unsigned().notNullable().references('id').inTable('School');
     }),
   ]);
 };
@@ -23,6 +20,3 @@ exports.down = function(knex, Promise) {
     knex.schema.dropTable('Products'),
   ]);
 };
-
-
- 

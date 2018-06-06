@@ -6,10 +6,10 @@ exports.up = function(knex, Promise) {
         table.string('name');
         table.string('abbreviation');
         table.string('location');
-        
+
     }),
   ]);
-    
+
 };
 
 exports.down = function(knex, Promise) {
