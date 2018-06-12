@@ -3,7 +3,7 @@ import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
 import '../App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Home from './Home.js';
-import NavBar from './NavBar.js';
+import NaviBar from './NavBar.js';
 import Footer from './Footer.js';
 import CreateListing from './CreateListing.js';
 import Listings from './Listings.js';
@@ -31,7 +31,7 @@ class App extends Component {
     return (
       <div className="App">
         <MuiThemeProvider>
-        <NavBar/>
+        <NaviBar/>
         <BrowserRouter>
         <div className="AppContainer">
         <Switch>
