@@ -3,13 +3,14 @@ import { Jumbotron, Button } from 'react-bootstrap';
 
  const JumboStyle = {
 	 Jumbo: {
+        textAlign: 'center',
 	 	position: 'relative',
         margin: 'auto',
-        backgroundColor: 'rgb(0, 188, 212)',
+        backgroundColor: 'none',//'rgb(0, 188, 212)',
         width: 'auto',
-        borderStyle: 'solid',
-        boxShadow: '5px 5px grey'
-    }
+        borderStyle: 'none',//'solid',
+        boxShadow: 'none',//5px 5px grey',
+    },
 }
 
 class LandingText extends React.Component {
@@ -17,13 +18,10 @@ class LandingText extends React.Component {
 		return(
 			<div>
 				<Jumbotron style={JumboStyle.Jumbo}> 
-					<h1>"Created For Students, by Students"</h1>
+					<h1>"Created For Students, By Students"</h1>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 					</p>
-					<Button bsStyle="primary">
-					Button
-					</Button>
 				</Jumbotron>
 			</div>
 		);

@@ -31,33 +31,23 @@ class NaviBar extends React.Component{
     render(){
         return(
             <div>
-
-
-            <Navbar>
-            <Navbar.Brand>
-            <Navbar.Item href="#">
-            TextBook Exchange
-            </Navbar.Item>
-            <Navbar.Burger/>
-            </Navbar.Brand>
-            <Navbar.Menu>
-            <Navbar.Container>
+                <Navbar>
             <Navbar.Item dropdown hoverable>
-            <Navbar.Link>
+                <Navbar.Link>
             
-            </Navbar.Link>
-            <Navbar.Dropdown boxed>
-            <Navbar.Item href="#">
-                Buy
+                </Navbar.Link>
+                <Navbar.Dropdown boxed>
+                <Navbar.Item>
+                <BrowserRouter><Link to='/listings' onClick={this.handleClose}>Buy</Link></BrowserRouter>
             </Navbar.Item>
             <Navbar.Item href="#">
-                Sell
+                <BrowserRouter><Link to='/createListing' onClick={this.handleClose}>Sell</Link></BrowserRouter>
             </Navbar.Item>
             <Navbar.Item href="#">
                 Contact
             </Navbar.Item>
             <Navbar.Item href="#">
-                My Account
+                <BrowserRouter><Link to='/myAccount' onClick={this.handleClose}>My Account</Link></BrowserRouter>
             </Navbar.Item>
             <Navbar.Item href="#">
                 My Favorites
@@ -67,10 +57,19 @@ class NaviBar extends React.Component{
             </Navbar.Item>
             <Navbar.Divider/>
             <Navbar.Item active href="#">
-                Home
+                <BrowserRouter><Link to='/' onClick={this.handleClose}>Home</Link></BrowserRouter>
             </Navbar.Item>
             </Navbar.Dropdown>
             </Navbar.Item>
+                    <Navbar.Brand>
+                        <Navbar.Item>
+                            <BrowserRouter><Link to='/' onClick={this.handleClose}>TextBook Exchange</Link></BrowserRouter>
+                        </Navbar.Item>
+                        <Navbar.Burger/>
+                    </Navbar.Brand>
+            <Navbar.Menu>
+            <Navbar.Container>
+            
             
             </Navbar.Container>
             <Navbar.Container position="end">
