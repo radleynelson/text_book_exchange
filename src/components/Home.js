@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, BrowserRouter } from 'react-router-dom';
 import LandingText from './LandingText';
 import Toggle from './Toggle';
+import SearchBox from './SearchBox';
 import { Button, Columns } from 'react-bulma-components/full';
 import { FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
 
@@ -22,7 +23,7 @@ const Styles = {
         position: 'absolute',
         right: '10px',
         top: '5px',
-        color: '#EE6C62',
+        //color: '#EE6C62',
     },
     root: {
         display: 'grid',
@@ -36,11 +37,12 @@ const Styles = {
         fontSize: '5em',
     },
     searchInput: {
-        width: '100%',
+        width: '80%',
         padding: '12px 20px',
-        margin: '8px 0',
+        margin: '0 auto',
         boxSizing: 'border-box',
         outlineStyle: 'none',
+        display: 'block',
     }
 };
 
@@ -69,7 +71,7 @@ constructor(props){
         <Columns>
             <Columns.Column>
                 <section style={Styles.root}>
-                    <BrowserRouter><Link to='/createListing' onClick={this.handleClose}><Button style={Styles.button2}>Sell + </Button></Link></BrowserRouter>
+                    <BrowserRouter><Link to='/createListing' onClick={this.handleClose}><Button style={Styles.button2}>Sell A Book </Button></Link></BrowserRouter>
                     
                     
                     {/*<Link to='/listings'><button style={Styles.button}><span style={Styles.Text}>BUY</span></button></Link>
@@ -85,14 +87,12 @@ constructor(props){
         </Columns>
         <Columns>
             <Columns.Column>
-                <form>
-                        <FormGroup controlId="formBasicText">
-                            <FormControl type="text" placeholder="Search" style={Styles.searchInput}/>
-                            <FormControl.Feedback />
-                        </FormGroup>
-                    </form>
+                <SearchBox />
             </Columns.Column>
         </Columns>
+        <br></br>
+        <br></br>
+        <br></br>
         <hr></hr>
            <LandingText/>
         </div>

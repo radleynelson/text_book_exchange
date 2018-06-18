@@ -15,6 +15,10 @@ let listings = [
   {Title: 'Book 9', Author: 'Author 5', Id: 5, Price: '$50.00', Image: 'https://i.imgur.com/1w6UFY9.jpg', ShortDescription:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.', DatePosted: '7:53 AM - 1 Jan 2018'},
 ]
 
+// Post a listing to the database
+
+
+
 app.get('/api/testing',(req,res)=> {
 
   res.status(200).json(listings);

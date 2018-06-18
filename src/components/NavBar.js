@@ -31,6 +31,7 @@ class NaviBar extends React.Component{
     render(){
         return(
             <div>
+                
                 <Navbar>
             <Navbar.Item dropdown hoverable>
                 <Navbar.Link>
@@ -93,7 +94,9 @@ class NaviBar extends React.Component{
             </Navbar.Container>
             </Navbar.Menu>
             </Navbar>
-
+        
+            
+            
             {/*<AppBar
           title={<div>Text Book Exchange</div>}
           iconClassNameRight="muidocs-icon-navigation-expand-more"
